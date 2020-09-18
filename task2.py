@@ -12,12 +12,12 @@ def max_diff_pairs(string: str) -> int:
     
     prev = s
 
-  if not groups:
-    return pairs
-  else:
-    max(groups)
+  groups.append(pairs)
+
+  return max(groups)
     
 
-sample = 'abcdeffgghh'
+# sample = 'abcdeffgghh'
+sample = '12222987654321'
 
 print(max_diff_pairs(sample))
